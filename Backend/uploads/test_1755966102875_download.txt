@@ -1,0 +1,6 @@
+This is a test file for download functionality.
+Created at: 2025-08-23T16:21:42.876Z
+File name: test_1755966102875_download.txt
+
+This file should be downloadable from the resume system.
+Test content for verification.
