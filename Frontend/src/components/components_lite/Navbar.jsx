@@ -39,7 +39,7 @@ const getProfilePhotoUrl = (rawUrl) => {
     return rawUrl;
   }
   // Handle relative paths by prepending the API base URL
-  return `http://localhost:4000${rawUrl.startsWith("/") ? rawUrl : `/${rawUrl}`}`;
+  return `https://jobportal-k289.onrender.com${rawUrl.startsWith("/") ? rawUrl : `/${rawUrl}`}`;
 };
 
 /**

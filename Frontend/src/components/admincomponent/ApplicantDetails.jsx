@@ -143,7 +143,7 @@ const ApplicantDetails = () => {
                     <button className="btn btn-outline-primary btn-sm" onClick={() => openResume(resumeUrl, resumeFileName)}>
                       <i className="bi bi-eye me-1"></i> View
                     </button>
-                    <a className="btn btn-outline-success btn-sm" href={(resumeUrl && resumeUrl.includes('http://localhost:4000/resume/')) ? resumeUrl.replace('/resume/','/download/') : (resumeUrl ? (resumeUrl.includes('?') ? `${resumeUrl}&fl_attachment=${encodeURIComponent(resumeFileName || 'resume.pdf')}` : `${resumeUrl}?fl_attachment=${encodeURIComponent(resumeFileName || 'resume.pdf')}`) : '#')} target="_blank" rel="noreferrer" download>
+                    <a className="btn btn-outline-success btn-sm" href={(resumeUrl && resumeUrl.includes('https://jobportal-k289.onrender.com/resume/')) ? resumeUrl.replace('/resume/','/download/') : (resumeUrl ? (resumeUrl.includes('?') ? `${resumeUrl}&fl_attachment=${encodeURIComponent(resumeFileName || 'resume.pdf')}` : `${resumeUrl}?fl_attachment=${encodeURIComponent(resumeFileName || 'resume.pdf')}`) : '#')} target="_blank" rel="noreferrer" download>
                       <i className="bi bi-download me-1"></i> Download
                     </a>
                   </div>

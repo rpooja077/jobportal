@@ -28,7 +28,7 @@ const getProfilePhotoUrl = (rawUrl) => {
     return rawUrl;
   }
   // handle relative stored paths like /uploads/...
-  const fullUrl = `http://localhost:4000${rawUrl.startsWith("/") ? rawUrl : `/${rawUrl}`}`;
+  const fullUrl = `https://jobportal-k289.onrender.com${rawUrl.startsWith("/") ? rawUrl : `/${rawUrl}`}`;
   console.log('🔗 Constructed full URL:', fullUrl);
   return fullUrl;
 };
@@ -107,7 +107,7 @@ const handleResumeView = (resumeUrl, fileName) => {
   try {
     // Use the same robust download URL (works even when inline view fails)
     let downloadUrl = resumeUrl;
-    const isLocal = resumeUrl.includes('http://localhost:4000/resume/');
+    const isLocal = resumeUrl.includes('https://jobportal-k289.onrender.com/resume/');
     const isCloudinary = resumeUrl.includes('res.cloudinary.com');
     if (isLocal) {
       downloadUrl = resumeUrl.replace('/resume/', '/download/');
@@ -168,7 +168,7 @@ const handleResumeView = (resumeUrl, fileName) => {
   }
   try {
     let downloadUrl = resumeUrl;
-    const isLocal = resumeUrl.includes('http://localhost:4000/resume/');
+    const isLocal = resumeUrl.includes('https://jobportal-k289.onrender.com/resume/');
     const isCloudinary = resumeUrl.includes('res.cloudinary.com');
     if (isLocal) {
       downloadUrl = resumeUrl.replace('/resume/', '/download/');

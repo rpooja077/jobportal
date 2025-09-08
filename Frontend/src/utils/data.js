@@ -1,7 +1,7 @@
-export const USER_API_ENDPOINT = "http://localhost:4000/api/user";
-export const JOB_API_ENDPOINT = "http://localhost:4000/api/job";
-export const APPLICATION_API_ENDPOINT = "http://localhost:4000/api/application";
-export const COMPANY_API_ENDPOINT = "http://localhost:4000/api/company";
+export const USER_API_ENDPOINT = "https://jobportal-k289.onrender.com/api/user";
+export const JOB_API_ENDPOINT = "https://jobportal-k289.onrender.com/api/job";
+export const APPLICATION_API_ENDPOINT = "https://jobportal-k289.onrender.com/api/application";
+export const COMPANY_API_ENDPOINT = "https://jobportal-k289.onrender.com/api/company";
 
 
 // export const USER_API_ENDPOINT = "http://localhost:5011/api/user";

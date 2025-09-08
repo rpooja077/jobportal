@@ -89,7 +89,7 @@ const ApplicantsTable = () => {
       // Normalize scheme
       if (downloadUrl.startsWith('//')) downloadUrl = 'https:' + downloadUrl;
 
-      const isLocal = downloadUrl.includes('http://localhost:4000/resume/');
+      const isLocal = downloadUrl.includes('https://jobportal-k289.onrender.com/resume/');
       const isCloudinary = downloadUrl.includes('res.cloudinary.com');
       if (isLocal) {
         downloadUrl = downloadUrl.replace('/resume/', '/download/');

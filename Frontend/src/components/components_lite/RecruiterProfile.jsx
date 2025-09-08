@@ -15,7 +15,7 @@ const getProfilePhotoUrl = (rawUrl) => {
   // Avoid accidentally using resume/document URLs as images
   if (rawUrl.includes('.pdf') || rawUrl.includes('.doc') || rawUrl.includes('.txt')) return "";
   if (rawUrl.startsWith("http")) return rawUrl;
-  return `http://localhost:4000${rawUrl.startsWith("/") ? rawUrl : `/${rawUrl}`}`;
+  return `https://jobportal-k289.onrender.com${rawUrl.startsWith("/") ? rawUrl : `/${rawUrl}`}`;
 };
 
 
